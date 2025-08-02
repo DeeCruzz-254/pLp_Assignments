@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Metadata -->
+  <title>Accessible & SEO-Friendly Web Page</title>
+  <meta name="description" content="A simple, semantic, accessible, and SEO-optimized HTML5 page." />
+  <meta name="keywords" content="HTML5, accessibility, SEO, semantic tags, web development" />
+  <meta name="author" content="Your Name" />
+
+  <!-- Open Graph for better sharing -->
+  <meta property="og:title" content="Accessible & SEO-Friendly Web Page" />
+  <meta property="og:description" content="A demo of clean, semantic HTML5 with accessibility and SEO in mind." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com" />
+</head>
+
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#main-content">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Welcome to My Semantic HTML Page</h1>
+    <p>This is a simple demo page designed with accessibility and SEO in mind.</p>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Page</h2>
+      <p>This page demonstrates the use of semantic HTML5 elements, proper heading structure, accessibility best practices, and on-page SEO optimization.</p>
+    </section>
+
+    <section aria-labelledby="features-heading">
+      <h2 id="features-heading">Key Features</h2>
+      <ul>
+        <li><strong>Semantic HTML5:</strong> Using elements like &lt;header&gt;, &lt;main&gt;, &lt;section&gt;, &lt;footer&gt;.</li>
+        <li><strong>Accessible:</strong> Uses ARIA labels, descriptive link text, and logical heading structure.</li>
+        <li><strong>SEO-Friendly:</strong> Includes relevant metadata and keywords.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Want to get in touch? Email me at 
+        <a href="mailto:example@example.com" aria-label="Email the site owner">example@example.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
