@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css
+">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Samuel Wambuu Mbugua </title>
+
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm [Wambuu Samwel Mbugua]</h1>
+    <p>A tech enthusiast with skills in databases, front-end, graphics design, and Python scripting.</p>
+  </header>
+
+  <div class="tabs">
+    <div class="tab-buttons">
+      <button class="active" onclick="openTab('database')">Database Design</button>
+      <button onclick="openTab('frontend')">HTML, CSS & JS</button>
+      <button onclick="openTab('design')">Graphics & Python</button>
+    </div>
+
+    <div id="database" class="tab-content active">
+      <h2>MySQL Database Design</h2>
+      <p>
+        Skilled in crafting scalable and normalized database schemas using MySQL.
+        Experience with ER modeling, indexing, query optimization, stored procedures,
+        and relational integrity.
+      </p>
+    </div>
+
+    <div id="frontend" class="tab-content">
+      <h2>HTML, CSS & JavaScript</h2>
+      <p>
+        Enthusiastic about clean and responsive web design using HTML5, CSS3, and
+        modern JavaScript. Comfortable with DOM manipulation, animations, and creating
+        interactive UI elements.
+      </p>
+    </div>
+
+    <div id="design" class="tab-content">
+      <h2>Graphics Design & Python</h2>
+      <p>
+        Proficient with Adobe Photoshop, Illustrator, and Canva to create compelling
+        visual content including logos, flyers, and social media designs.
+      </p>
+      <p>
+        In Python, I enjoy building small tools, automating tasks, and working on data
+        analysis and scripting projects.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function openTab(tabId) {
+      const contents = document.querySelectorAll('.tab-content');
+      const buttons = document.querySelectorAll('.tab-buttons button');
+      contents.forEach(c => c.classList.remove('active'));
+      buttons.forEach(b => b.classList.remove('active'));
+
+      document.getElementById(tabId).classList.add('active');
+      event.currentTarget.classList.add('active');
+    }
+  </script>
+</body>
+</html>
